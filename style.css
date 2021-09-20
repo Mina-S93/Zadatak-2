@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #FAFAFA;
+    font-size: 18px;
+    color: #87879D;
+    line-height: 26px;
+}
+header{
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 5%;
+}
+.logo{
+    padding-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.group-chat{
+    display: flex;
+}
+
+.group-chat-img{
+    position: relative;
+}
+
+.left{
+    left: -5vw;
+}
+
+.right{
+    right: -5vw;
+}
+
+.up{
+    transform: translateY(-50%);
+}
+
+.down{
+    transform: translateY(50%);
+}
+
+.group-chat-img img{
+    border-radius: 50%;
+    width: 25%;
+    margin: 3%;
+}
+
+.group-chat-text{
+    flex-basis: 60%;
+}
+
+.group-chat-text h1{
+    font-size: 64px;
+    font-weight: 900;
+    color: #28283D;
+    line-height: 64px;
+    width: 90%;
+    margin: 5% auto;
+}
+
+.group-chat-text p{
+    margin-bottom: 5%;
+}
+
+button{
+    padding: 1.2rem 2rem;
+    border-radius: 35px;
+    margin-right: 2%;
+    color: #FAFAFA;
+    border: none;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.group-chat-text button span{
+    color: #41cffa;
+}
+
+.blue{
+    background-color: #4D96A9;
+}
+
+.purple{
+    background-color: #855FB1;
+}
+
+.blue:hover{
+    background-color: #8FE3F9;
+}
+
+.purple:hover{
+    background-color: #D9B8FF;
+}
+
+.divider{
+    width: 50vw;
+    height: 8rem;
+    border-right: 1px solid #b6b6b6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.divider span{
+    border: 1px solid #b6b6b6;
+    color: #87879D;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: #FAFAFA;
+    transform: translate(50%, 50%);
+}
+
+main{
+    margin: 5% 10%;
+    text-align: center;
+}
+
+.photos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.photos img{
+    width: 23%;
+    border-radius: 8px;
+}
+
+.modern-use{
+    width: 60%;
+    margin: auto;
+}
+
+.modern-use p:first-of-type{
+    margin: 10% 0 3% 0;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #4D96A9;
+    font-weight: 900;
+}
+
+.modern-use h2{
+    font-size: 40px;
+    line-height: 44px;
+    color: #28283D;
+    width: 65%;
+    margin: auto;
+    font-weight: 900;
+}
+
+.modern-use p:last-of-type{
+    margin: 5% auto 0 auto;
+    width: 73%;
+}
+
+footer{
+    background: linear-gradient(rgb(77,150,168,0.85), rgb(77,150,168,0.85)), url(starter-code/assets/desktop/image-footer.jpg) no-repeat center;
+    background-size: cover;
+    padding: 10%;
+    color: #FAFAFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2{
+    font-size: 40px;
+    line-height: 44px;
+    flex-basis: 28%;
+}
+
+footer p{
+    flex-basis: 29%;
+}
+
+footer button span{
+    color: #a899b9;
+}
+
+@media screen and (max-width:900px){
+    .logo{
+        margin-bottom: 15%;
+    }
+    .group-chat{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 120vw;
+        position: relative;
+        left: -10%;
+    }
+    .left{
+        left: 0;
+        justify-content: flex-end;
+    }
+    .right{
+        right: 0;
+    }
+
+    .group-chat-img{
+        flex-basis: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .group-chat-img img{
+        flex-basis: 25%;
+    }
+
+    .right img:not(.down){
+        transform: translateY(-50%);
+    }
+
+    .right .down{
+        transform: translateY(0%);
+    }
+
+    .group-chat-text{
+        margin: 5% 0;
+        order: 1;
+    }
+
+    main{
+        margin: 15% 5%;
+    }
+    .modern-use{
+        width: 100%;
+    }
+
+    .modern-use p:last-of-type{
+        width: 90%;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer h2{
+        width: 60%;
+    }
+    
+    footer p{
+        width: 90%;
+        margin: 10%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .group-chat-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .group-chat-text h1{
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .blue{
+        margin: 5%;
+    }
+
+    .photos{
+        flex-wrap: wrap;
+    }
+
+    .photos img{
+        flex-basis: 46%;
+        margin: 2%;
+    }
+
+    .modern-use h2{
+        font-size: 36px;
+        line-height: 42px;
+        width: 100%;
+        margin: 10% 0;
+    }
+    
+    .modern-use p:last-of-type{
+        width: 100%;
+    }
+
+    footer{
+        padding: 20% 0;
+    }
+
+    footer h2{
+        width: 100%;
+        font-size: 34px;
+    }
+    
+    footer p{
+        width: 80%;
+    }
+}
